@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-SIGAP | Sistem Informasi Gawat Darurat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="logo-sigap.png" alt="Logo e-SIGAP" style="width:100px; margin-bottom:10px;">
+        <h1>e-SIGAP</h1>
+        <p>Sistem Informasi Gawat Darurat Area dan Prosedur</p>
+    </header>
+
+    <nav>
+        <button onclick="navigate('peta')"><i class="fas fa-map"></i> Peta Evakuasi</button>
+        <button onclick="navigate('prosedur')"><i class="fas fa-file-alt"></i> Prosedur Darurat</button>
+        <button onclick="navigate('kontak')"><i class="fas fa-phone"></i> Kontak Darurat</button>
+        <button onclick="navigate('simulasi')"><i class="fas fa-video"></i> Simulasi Video</button>
+    </nav>
+
+    <main id="content">
+        <section id="peta" class="page">
+            <h2>Peta Jalur Evakuasi</h2>
+            <img src="peta-evakuasi.png" alt="Peta Jalur Evakuasi" style="width:100%; max-width:600px;">
+        </section>
+
+        <section id="prosedur" class="page">
+            <h2>Prosedur Tanggap Darurat</h2>
+            <embed src="prosedur-darurat.pdf" type="application/pdf" width="100%" height="500px">
+        </section>
+
+        <section id="kontak" class="page">
+            <h2>Kontak Darurat</h2>
+            <ul>
+                <li>SHE Team : 0851-7113-8789</li>
+                <li>HRGA: 0812-5813-8808</li>
+                <li>Floor Warden: 0823-4125-6698</li>
+            </ul>
+        </section>
+
+        <section id="simulasi" class="page">
+            <h2>Simulasi Tanggap Darurat</h2>
+            <video controls width="100%">
+                <source src="simulasi.mp4" type="video/mp4">
+                Video tidak dapat diputar di browser ini.
+            </video>
+        </section>
+    </main>
+
+    <footer style="text-align:center; padding:20px; background:#eee; color:#555;">
+        &copy; 2025 Trakindo | Inovasi e-SIGAP
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
